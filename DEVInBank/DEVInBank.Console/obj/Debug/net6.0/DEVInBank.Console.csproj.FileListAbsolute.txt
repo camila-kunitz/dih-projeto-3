@@ -1,0 +1,15 @@
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\DEVInBank.Console.exe
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\DEVInBank.Console.deps.json
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\DEVInBank.Console.runtimeconfig.json
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\DEVInBank.Console.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\ref\DEVInBank.Console.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\bin\Debug\net6.0\DEVInBank.Console.pdb
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.csproj.AssemblyReference.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.AssemblyInfoInputs.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.AssemblyInfo.cs
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.csproj.CoreCompileInputs.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\ref\DEVInBank.Console.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.pdb
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Console\obj\Debug\net6.0\DEVInBank.Console.genruntimeconfig.cache
