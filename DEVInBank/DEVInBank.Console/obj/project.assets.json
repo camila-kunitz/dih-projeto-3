@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBank.Console.csproj",
-      "projectName": "DEVInBank.Console",
-      "projectPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBank.Console.csproj",
+      "projectUniqueName": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj",
+      "projectName": "DEVInBankConsole",
+      "projectPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj",
       "packagesPath": "C:\\Users\\Camila\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\obj\\",
       "projectStyle": "PackageReference",

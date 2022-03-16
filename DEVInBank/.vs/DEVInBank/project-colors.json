@@ -1,0 +1,16 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "444466de-91b1-4e7d-a739-40f12c05edac": {
+      "ProjectGuid": "444466de-91b1-4e7d-a739-40f12c05edac",
+      "DisplayName": "DEVInBank.Core",
+      "ColorIndex": 0
+    },
+    "de7e87d4-ebd3-4bf9-a822-b4acc3f495b6": {
+      "ProjectGuid": "de7e87d4-ebd3-4bf9-a822-b4acc3f495b6",
+      "DisplayName": "DEVInBank.Console",
+      "ColorIndex": 1
+    }
+  },
+  "NextColorIndex": 2
+}

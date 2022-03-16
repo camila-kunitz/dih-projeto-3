@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVInBank.Core", "DEVInBank.Core\DEVInBank.Core.csproj", "{444466DE-91B1-4E7D-A739-40F12C05EDAC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVInBank.Core", "DEVInBank.Core\DEVInBank.Core.csproj", "{444466DE-91B1-4E7D-A739-40F12C05EDAC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DEVInBank.Console", "DEVInBank.Console\DEVInBank.Console.csproj", "{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVInBankConsole", "DEVInBank.Console\DEVInBankConsole.csproj", "{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
