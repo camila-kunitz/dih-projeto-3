@@ -8,9 +8,14 @@
     },
     "de7e87d4-ebd3-4bf9-a822-b4acc3f495b6": {
       "ProjectGuid": "de7e87d4-ebd3-4bf9-a822-b4acc3f495b6",
-      "DisplayName": "DEVInBank.Console",
+      "DisplayName": "DEVInBankConsole",
       "ColorIndex": 1
+    },
+    "98feb01c-c123-49c5-8d29-93fbf97eda95": {
+      "ProjectGuid": "98feb01c-c123-49c5-8d29-93fbf97eda95",
+      "DisplayName": "DEVInBankConsole",
+      "ColorIndex": 2
     }
   },
-  "NextColorIndex": 2
+  "NextColorIndex": 3
 }

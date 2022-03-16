@@ -5,7 +5,7 @@ VisualStudioVersion = 17.0.32126.317
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVInBank.Core", "DEVInBank.Core\DEVInBank.Core.csproj", "{444466DE-91B1-4E7D-A739-40F12C05EDAC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVInBankConsole", "DEVInBank.Console\DEVInBankConsole.csproj", "{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "DEVInBankConsole", "DEVInBankConsole\DEVInBankConsole.csproj", "{98FEB01C-C123-49C5-8D29-93FBF97EDA95}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -17,10 +17,10 @@ Global
 		{444466DE-91B1-4E7D-A739-40F12C05EDAC}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{444466DE-91B1-4E7D-A739-40F12C05EDAC}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{444466DE-91B1-4E7D-A739-40F12C05EDAC}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DE7E87D4-EBD3-4BF9-A822-B4ACC3F495B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98FEB01C-C123-49C5-8D29-93FBF97EDA95}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98FEB01C-C123-49C5-8D29-93FBF97EDA95}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98FEB01C-C123-49C5-8D29-93FBF97EDA95}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98FEB01C-C123-49C5-8D29-93FBF97EDA95}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj": {}
+    "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBankConsole\\DEVInBankConsole.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj": {
+    "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBankConsole\\DEVInBankConsole.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj",
+        "projectUniqueName": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBankConsole\\DEVInBankConsole.csproj",
         "projectName": "DEVInBankConsole",
-        "projectPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\DEVInBankConsole.csproj",
+        "projectPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBankConsole\\DEVInBankConsole.csproj",
         "packagesPath": "C:\\Users\\Camila\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Console\\obj\\",
+        "outputPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBankConsole\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Camila\\AppData\\Roaming\\NuGet\\NuGet.Config",
