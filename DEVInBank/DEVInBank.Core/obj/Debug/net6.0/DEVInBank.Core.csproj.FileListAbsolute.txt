@@ -1,0 +1,12 @@
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\bin\Debug\net6.0\DEVInBank.Core.deps.json
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\bin\Debug\net6.0\DEVInBank.Core.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\bin\Debug\net6.0\ref\DEVInBank.Core.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\bin\Debug\net6.0\DEVInBank.Core.pdb
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.csproj.AssemblyReference.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.AssemblyInfoInputs.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.AssemblyInfo.cs
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.csproj.CoreCompileInputs.cache
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\ref\DEVInBank.Core.dll
+C:\Users\Camila\Desktop\dih-projeto-3\DEVInBank\DEVInBank.Core\obj\Debug\net6.0\DEVInBank.Core.pdb

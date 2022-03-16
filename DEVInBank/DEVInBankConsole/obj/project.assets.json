@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net6.0": {}
+    "net6.0": {
+      "DEVInBank.Core/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "compile": {
+          "bin/placeholder/DEVInBank.Core.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/DEVInBank.Core.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "DEVInBank.Core/1.0.0": {
+      "type": "project",
+      "path": "../DEVInBank.Core/DEVInBank.Core.csproj",
+      "msbuildProject": "../DEVInBank.Core/DEVInBank.Core.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net6.0": []
+    "net6.0": [
+      "DEVInBank.Core >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Camila\\.nuget\\packages\\": {}
@@ -33,7 +52,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Core\\DEVInBank.Core.csproj": {
+              "projectPath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Core\\DEVInBank.Core.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

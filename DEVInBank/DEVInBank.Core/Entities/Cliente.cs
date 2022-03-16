@@ -2,9 +2,9 @@
 {
     public class Cliente
     {
-        protected string Nome { get; private set; }
-        protected string CPF { get; private set; }
-        protected Endereco Endereco { get; private set; }
+        public string Nome { get; private set; }
+        public string CPF { get; private set; }
+        public Endereco Endereco { get; private set; }
 
         public Cliente(string nome, string cpf, Endereco endereco)
         {
