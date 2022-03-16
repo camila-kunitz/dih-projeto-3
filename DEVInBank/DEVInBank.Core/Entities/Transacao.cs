@@ -8,9 +8,9 @@ namespace DEVInBank.Core.Entities
         public TipoTransacaoEnum Tipo { get; set; }
         public double ValorTransacao { get; set; }
 
-        public Transacao(DateTime dataTransacao, TipoTransacaoEnum tipo, double valorTransacao)
+        public Transacao(TipoTransacaoEnum tipo, double valorTransacao)
         {
-            DataTransacao = dataTransacao;
+            DataTransacao = DateTime.Now;
             Tipo = tipo;
             ValorTransacao = valorTransacao;
         }

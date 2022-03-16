@@ -12,5 +12,15 @@
             CPF = cpf;
             Endereco = endereco;
         }
+
+        public void AtualizarNome(string nomeAtualizado)
+        {
+            Nome = nomeAtualizado;
+        }
+
+        public void AtualizarEndereco(Endereco novoEndereco)
+        {
+            Endereco = novoEndereco;
+        }
     }
 }

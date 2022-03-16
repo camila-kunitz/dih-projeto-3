@@ -14,10 +14,10 @@ namespace DEVInBankConsole
             var enderecoCliente1 = new Endereco("Rua X", "123", "Bairro Y", "00.000-01", "Florianópolis", "SC");
             var cliente1 = new Cliente("Camila", "000.000.000-01", enderecoCliente1);
             var contaCliente1 = new ContaBancaria(AgenciaEnum.FLORIANOPOLIS, cliente1, 1000);
-
             contaCliente1.Depositar(500.50);
             contaCliente1.Depositar(300);
             contaCliente1.Sacar(200);
+
             Console.WriteLine("------------------------------------");
             Console.WriteLine($"Conta: {contaCliente1.NumeroConta}");
             Console.WriteLine($"Agência: {contaCliente1.NumeroAgencia}");
@@ -34,6 +34,8 @@ namespace DEVInBankConsole
             var contaCliente2 = new ContaBancaria(AgenciaEnum.BIGUACU, cliente2, 2000);
             contaCliente2.Depositar(1000);
             contaCliente2.Sacar(500);
+            var novoEnderecoCliente2 = new Endereco("Rua A", "769", "Bairro B", "00.000-03", "São José", "SC");
+            contaCliente2.AlterarDadosCadastrais("João da Silva", novoEnderecoCliente2, 3000, AgenciaEnum.SAO_JOSE);
 
             Console.WriteLine("------------------------------------");
             Console.WriteLine($"Conta: {contaCliente2.NumeroConta}");

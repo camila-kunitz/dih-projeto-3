@@ -29,7 +29,7 @@ namespace DEVInBank.Core.Entities
         }
 
         public void Depositar(double valorDepositado) {
-            var transacao = new Transacao(DateTime.Now, TipoTransacaoEnum.DEPOSITO, valorDepositado);
+            var transacao = new Transacao(TipoTransacaoEnum.DEPOSITO, valorDepositado);
             Transacoes.Add(transacao);
 
             saldo += valorDepositado;
@@ -38,7 +38,7 @@ namespace DEVInBank.Core.Entities
         public void Sacar(double valorSacado)
         {
             if (saldo >= valorSacado) {
-                var transacao = new Transacao(DateTime.Now, TipoTransacaoEnum.SAQUE, valorSacado);
+                var transacao = new Transacao(TipoTransacaoEnum.SAQUE, valorSacado);
                 Transacoes.Add(transacao);
 
                 saldo -= valorSacado;
@@ -54,6 +54,14 @@ namespace DEVInBank.Core.Entities
             Transacoes.ForEach(transacao => {
                 Console.WriteLine($">>> Data da Transação: {transacao.DataTransacao} | Tipo: {transacao.Tipo} | Valor: {transacao.ValorTransacao} ");
             });
+        }
+
+        public void AlterarDadosCadastrais(string nomeAtualizado, Endereco novoEndereco, double novaRendaMensal, AgenciaEnum novaAgencia)
+        {
+            cliente.AtualizarNome(nomeAtualizado);
+            cliente.AtualizarEndereco(novoEndereco);
+            RendaMensal = novaRendaMensal;
+            NumeroAgencia = novaAgencia;
         }
     }
 }
