@@ -11,7 +11,6 @@ namespace DEVInBank.Core.Entities
         public Cliente cliente { get; private set; }
         public double RendaMensal { get; private set; }
         private double saldo { get; set; }
-        public List<Transferencia> Transferencias { get; private set; } = new List<Transferencia>();
         public List<Transacao> Transacoes { get; set; } = new List<Transacao>();
 
         public ContaBancaria(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal)
@@ -62,6 +61,29 @@ namespace DEVInBank.Core.Entities
             cliente.AtualizarEndereco(novoEndereco);
             RendaMensal = novaRendaMensal;
             NumeroAgencia = novaAgencia;
+        }
+
+        public void ReceberTransferencia(double valorTransferido)
+        {
+            var transacao = new Transacao(TipoTransacaoEnum.TRANSFERENCIA_RECEBIDA, valorTransferido);
+            Transacoes.Add(transacao);
+
+            saldo += valorTransferido;
+        }
+
+        public void EnviarTransferencia(double valorTransferido)
+        {
+            if (saldo >= valorTransferido)
+            {
+                var transacao = new Transacao(TipoTransacaoEnum.TRANSFERENCIA_ENVIADA, valorTransferido);
+                Transacoes.Add(transacao);
+
+                saldo -= valorTransferido;
+            }
+            else
+            {
+                Console.WriteLine("Saldo insuficiente para esta operação.");
+            }
         }
     }
 }

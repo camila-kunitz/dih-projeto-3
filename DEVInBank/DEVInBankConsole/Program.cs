@@ -18,6 +18,21 @@ namespace DEVInBankConsole
             contaCliente1.Depositar(300);
             contaCliente1.Sacar(200);
 
+            var enderecoCliente2 = new Endereco("Rua Z", "456", "Bairro W", "00.000-02", "Biguaçú", "SC");
+            var cliente2 = new Cliente("João", "000.000.000-02", enderecoCliente2);
+            var contaCliente2 = new ContaBancaria(AgenciaEnum.BIGUACU, cliente2, 2000);
+            contaCliente2.Depositar(1000);
+            contaCliente2.Sacar(500);
+            var novoEnderecoCliente2 = new Endereco("Rua A", "769", "Bairro B", "00.000-03", "São José", "SC");
+            contaCliente2.AlterarDadosCadastrais("João da Silva", novoEnderecoCliente2, 3000, AgenciaEnum.SAO_JOSE);
+
+
+            // Transferência
+            var transferencia = new Transferencia(contaCliente1, contaCliente2, 200);
+            transferencia.ExecutarTransferencia();
+
+
+
             Console.WriteLine("------------------------------------");
             Console.WriteLine($"Conta: {contaCliente1.NumeroConta}");
             Console.WriteLine($"Agência: {contaCliente1.NumeroAgencia}");
@@ -29,13 +44,7 @@ namespace DEVInBankConsole
             contaCliente1.ConsultarExtrato();
             Console.WriteLine("------------------------------------ \n");
 
-            var enderecoCliente2 = new Endereco("Rua Z", "456", "Bairro W", "00.000-02", "Biguaçú", "SC");
-            var cliente2 = new Cliente("João", "000.000.000-02", enderecoCliente2);
-            var contaCliente2 = new ContaBancaria(AgenciaEnum.BIGUACU, cliente2, 2000);
-            contaCliente2.Depositar(1000);
-            contaCliente2.Sacar(500);
-            var novoEnderecoCliente2 = new Endereco("Rua A", "769", "Bairro B", "00.000-03", "São José", "SC");
-            contaCliente2.AlterarDadosCadastrais("João da Silva", novoEnderecoCliente2, 3000, AgenciaEnum.SAO_JOSE);
+
 
             Console.WriteLine("------------------------------------");
             Console.WriteLine($"Conta: {contaCliente2.NumeroConta}");
@@ -47,6 +56,11 @@ namespace DEVInBankConsole
             Console.WriteLine("------------------------------------");
             contaCliente2.ConsultarExtrato();
             Console.WriteLine("------------------------------------ \n");
+
+
+
+
+
 
         }
     }

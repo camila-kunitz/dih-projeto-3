@@ -2,18 +2,23 @@
 {
     public class Transferencia 
     {
-        protected int NumeroContaOrigem { get; private set; }
-        protected int NumeroContaDestino { get; private set; }
-        protected decimal Valor { get; private set; }
+        protected ContaBancaria ContaOrigem { get; private set; }
+        protected ContaBancaria ContaDestino { get; private set; }
+        protected double Valor { get; private set; }
         public DateTime Data { get; private set; }
 
-        public Transferencia(int numeroContaOrigem, int numeroContaDestino, decimal valor)
+        public Transferencia(ContaBancaria contaOrigem, ContaBancaria contaDestino, double valor)
         {
-            NumeroContaOrigem = numeroContaOrigem;
-            NumeroContaDestino = numeroContaDestino;
+            ContaOrigem = contaOrigem;
+            ContaDestino = contaDestino;
             Valor = valor;
             Data = DateTime.Now;
         }
 
+        public void ExecutarTransferencia()
+        {
+            ContaOrigem.EnviarTransferencia(Valor);
+            ContaDestino.ReceberTransferencia(Valor);
+        }
     }
 }

@@ -4,6 +4,7 @@
     {
         SAQUE,
         DEPOSITO,
-        TRANSFERENCIA
+        TRANSFERENCIA_RECEBIDA,
+        TRANSFERENCIA_ENVIADA
     }
 }
