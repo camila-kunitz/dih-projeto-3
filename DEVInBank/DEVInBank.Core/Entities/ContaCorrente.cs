@@ -22,7 +22,7 @@ namespace DEVInBank.Core.Entities
             }
             else
             {
-                Console.WriteLine("Saldo insuficiente para esta operação.");
+                throw new Exception("Saldo insuficiente para esta operação.");
             }
         }
 

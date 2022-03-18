@@ -21,7 +21,8 @@
             {
                 ContaOrigem.EnviarTransferencia(Valor);
                 ContaDestino.ReceberTransferencia(Valor);
-            } catch (Exception ex)
+            } 
+            catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
             }

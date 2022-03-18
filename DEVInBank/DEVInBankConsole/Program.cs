@@ -56,12 +56,6 @@ namespace DEVInBankConsole
             Console.WriteLine("------------------------------------");
             contaCliente2.ConsultarExtrato();
             Console.WriteLine("------------------------------------ \n");
-
-
-
-
-
-
         }
     }
 }

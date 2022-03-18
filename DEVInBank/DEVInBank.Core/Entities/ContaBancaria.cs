@@ -41,8 +41,10 @@ namespace DEVInBank.Core.Entities
                 Transacoes.Add(transacao);
 
                 saldo -= valorSacado;
-            } else {
-                Console.WriteLine("Saldo insuficiente para esta operação.");
+            } 
+            else 
+            {
+                throw new Exception("Saldo insuficiente para esta operação.");
             } 
         }
 
@@ -82,7 +84,7 @@ namespace DEVInBank.Core.Entities
             }
             else
             {
-                Console.WriteLine("Saldo insuficiente para esta operação.");
+                throw new Exception("Saldo insuficiente para esta operação.");
             }
         }
     }
