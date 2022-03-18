@@ -10,7 +10,7 @@ namespace DEVInBank.Core.Entities
         public AgenciaEnum NumeroAgencia { get; private set; }
         public Cliente cliente { get; private set; }
         public double RendaMensal { get; private set; }
-        private double saldo { get; set; }
+        protected double saldo { get; set; }
         public List<Transacao> Transacoes { get; set; } = new List<Transacao>();
 
         public ContaBancaria(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal)
@@ -34,7 +34,7 @@ namespace DEVInBank.Core.Entities
             saldo += valorDepositado;
         }
 
-        public void Sacar(double valorSacado)
+        public virtual void Sacar(double valorSacado)
         {
             if (saldo >= valorSacado) {
                 var transacao = new Transacao(TipoTransacaoEnum.SAQUE, valorSacado);
@@ -71,7 +71,7 @@ namespace DEVInBank.Core.Entities
             saldo += valorTransferido;
         }
 
-        public void EnviarTransferencia(double valorTransferido)
+        public virtual void EnviarTransferencia(double valorTransferido)
         {
             if (saldo >= valorTransferido)
             {

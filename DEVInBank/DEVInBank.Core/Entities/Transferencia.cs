@@ -17,8 +17,14 @@
 
         public void ExecutarTransferencia()
         {
-            ContaOrigem.EnviarTransferencia(Valor);
-            ContaDestino.ReceberTransferencia(Valor);
+            try
+            {
+                ContaOrigem.EnviarTransferencia(Valor);
+                ContaDestino.ReceberTransferencia(Valor);
+            } catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
         }
     }
 }
