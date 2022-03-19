@@ -24,7 +24,10 @@
                     throw new Exception("Não é permitido realizar esta operação para a mesma conta.");
                 }
 
-                Console.WriteLine(this.Data.DayOfWeek);
+                if (this.Data.DayOfWeek == DayOfWeek.Saturday || this.Data.DayOfWeek == DayOfWeek.Sunday)
+                {
+                    throw new Exception("Não é permitido realizar esta operação no fim de semana.");
+                }
 
                 ContaOrigem.EnviarTransferencia(Valor);
                 ContaDestino.ReceberTransferencia(Valor);
