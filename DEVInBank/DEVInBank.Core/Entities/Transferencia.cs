@@ -19,6 +19,13 @@
         {
             try
             {
+                if (ContaOrigem.NumeroConta == ContaDestino.NumeroConta)
+                {
+                    throw new Exception("Não é permitido realizar esta operação para a mesma conta.");
+                }
+
+                Console.WriteLine(this.Data.DayOfWeek);
+
                 ContaOrigem.EnviarTransferencia(Valor);
                 ContaDestino.ReceberTransferencia(Valor);
             } 

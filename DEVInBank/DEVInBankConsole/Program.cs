@@ -29,9 +29,13 @@ namespace DEVInBankConsole
             contaCliente2.AlterarDadosCadastrais("João da Silva", novoEnderecoCliente2, 3000, AgenciaEnum.SAO_JOSE);
             // Conta Poupança - Rendimento
             var rendimentoPoupanca = contaCliente2.SimularRendimento(6, 0.05);
-            
 
-
+            // Conta Investimento
+            var enderecoCliente3 = new Endereco("Rua 3", "003", "Bairro 3", "00.000-03", "Biguaçú", "SC");
+            var cliente3 = new Cliente("Maria da Paz", "000.000.000-03", enderecoCliente3);
+            var contaCliente3 = new ContaInvestimento(AgenciaEnum.BIGUACU, cliente3, 3000, TipoInvestimentoEnum.LCA);
+            var rendimentoInvestimento = contaCliente3.SimularInvestimento(1000, 12);
+            Console.WriteLine($"Simulação do Investimento: R$ {rendimentoInvestimento}");
 
 
             // Transferência

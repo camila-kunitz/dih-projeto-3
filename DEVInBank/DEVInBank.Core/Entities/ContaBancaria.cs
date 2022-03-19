@@ -53,7 +53,7 @@ namespace DEVInBank.Core.Entities
             Console.WriteLine($"Extrato de movimentação da conta: {NumeroConta} | cliente: {cliente.Nome}");
 
             Transacoes.ForEach(transacao => {
-                Console.WriteLine($">>> Data da Transação: {transacao.DataTransacao} | Tipo: {transacao.Tipo} | Valor: {transacao.ValorTransacao} ");
+                Console.WriteLine($">>> Data da Transação: {transacao.DataTransacao} | Tipo: {transacao.Tipo} | Valor: R$ {transacao.ValorTransacao} ");
             });
         }
 
