@@ -2,7 +2,7 @@
 
 namespace DEVInBank.Core.Entities
 {
-    public class ContaBancaria
+    public abstract class ContaBancaria
     {
         private static int NUMERO_SEQUENCIAL = 0;
 
@@ -15,11 +15,11 @@ namespace DEVInBank.Core.Entities
 
         public ContaBancaria(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal)
         {
-            NumeroConta = ++NUMERO_SEQUENCIAL;
-            NumeroAgencia = numeroAgencia;
+            this.NumeroConta = ++NUMERO_SEQUENCIAL;
+            this.NumeroAgencia = numeroAgencia;
             this.cliente = cliente;
-            RendaMensal = rendaMensal;
-            saldo = 0;
+            this.RendaMensal = rendaMensal;
+            this.saldo = 0;
         }
 
         public double ConsultarSaldo()
