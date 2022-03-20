@@ -3,7 +3,7 @@ using DEVInBank.Core.Entities.Enum;
 
 namespace DEVInBankConsole
 {
-    public class Mock
+    public class DadosMock
     {
 
         public static List<ContaBancaria> ContasBancarias = GetContasBancarias();

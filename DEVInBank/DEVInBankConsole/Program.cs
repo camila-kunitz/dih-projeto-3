@@ -8,36 +8,50 @@ namespace DEVInBankConsole
     {
         static void Main(string[] args)
         {
+            // Cria dados fictícios de clientes, contas e transferências
+            var contasBancarias = DadosMock.ContasBancarias;
+            DadosMock.ExecutarTransferencias();
 
             Console.WriteLine(">>>>>> Bem Vindo ao DEVInBank <<<<<< \n");
 
-            var contasBancarias = Mock.ContasBancarias;
-            Mock.ExecutarTransferencias();
 
-            // Conta: Cliente 1
-            Console.WriteLine("------------------------------------");
-            Console.WriteLine($"Conta: {contasBancarias[0].NumeroConta}");
-            Console.WriteLine($"Agência: {contasBancarias[0].NumeroAgencia}");
-            Console.WriteLine($"Cliente: {contasBancarias[0].cliente.Nome}");
-            Console.WriteLine($"CPF: {contasBancarias[0].cliente.CPF}");
-            Console.WriteLine($"Saldo: R$ {contasBancarias[0].ConsultarSaldo()}");
-            Console.WriteLine($"Renda Mensal: R$ {contasBancarias[0].RendaMensal}");
-            Console.WriteLine("------------------------------------");
-            contasBancarias[0].ConsultarExtrato();
-            Console.WriteLine("------------------------------------ \n");
-
-            // Conta: Cliente 2
-            Console.WriteLine("------------------------------------");
-            Console.WriteLine($"Conta: {contasBancarias[1].NumeroConta}");
-            Console.WriteLine($"Agência: {contasBancarias[1].NumeroAgencia}");
-            Console.WriteLine($"Cliente: {contasBancarias[1].cliente.Nome}");
-            Console.WriteLine($"CPF: {contasBancarias[1].cliente.CPF}");
-            Console.WriteLine($"Saldo: R$ {contasBancarias[1].ConsultarSaldo()}");
-            Console.WriteLine($"Renda Mensal: R$ {contasBancarias[1].RendaMensal}");
-            Console.WriteLine("------------------------------------");
-            contasBancarias[1].ConsultarExtrato();
-            Console.WriteLine("------------------------------------");
+            criarMenu();
         }
+
+        private static void criarMenu()
+        {
+            Console.WriteLine("1 - Listar todas as contas.");
+            Console.WriteLine("2 - Listar contas com saldo negativo.");
+            Console.WriteLine("3 - Listar total de valor investido.");
+            Console.WriteLine("4 - Listar todas as transações de um determinado cliente. \n");
+
+            var opcaoDigitada = Console.ReadLine();
+
+            switch (opcaoDigitada)
+            {
+                case "1":
+                    Console.WriteLine(">> 1");
+                    break;
+
+                case "2":
+                    Console.WriteLine(">> 2");
+                    break;
+
+                case "3":
+                    Console.WriteLine(">> 3");
+                    break;
+
+                case "4":
+                    Console.WriteLine(">> 4");
+                    break;
+
+                default:
+                    Console.WriteLine("Opção inválida! Selecione uma operação:");
+                    criarMenu();
+                    break;
+            }
+        }
+   
     }
 }
     
