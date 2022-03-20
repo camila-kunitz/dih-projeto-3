@@ -15,6 +15,11 @@
       "ProjectGuid": "98feb01c-c123-49c5-8d29-93fbf97eda95",
       "DisplayName": "DEVInBankConsole",
       "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Arquivos Diversos",
+      "ColorIndex": -1
     }
   },
   "NextColorIndex": 3
