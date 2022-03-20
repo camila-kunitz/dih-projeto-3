@@ -4,14 +4,18 @@ namespace DEVInBank.Core.Entities
 {
     public class ContaInvestimento : ContaBancaria
     {
+        public double ValorAplicado { get; private set; }
         public TipoInvestimentoEnum tipoInvestimento { get; private set; }
-        
-        public ContaInvestimento(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal, TipoInvestimentoEnum tipoInvestimento) : base(numeroAgencia, cliente, rendaMensal)
+        public DateTime dataAplicacao { get; private set; }
+        public DateTime dataRetirada { get; private set; }
+        public double ValorRendimento { get; private set; }
+
+        public ContaInvestimento(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal) : base(numeroAgencia, cliente, rendaMensal)
         {
-            this.tipoInvestimento = tipoInvestimento;
+            TipoConta = TipoContaEnum.INVESTIMENTO;
         }
 
-        public double SimularInvestimento(double valorAplicado, int mesesAplicado)
+        public double SimularInvestimento(double valorAplicado, int mesesAplicado, TipoInvestimentoEnum tipoInvestimento)
         {
             switch (tipoInvestimento)
             {
@@ -43,6 +47,22 @@ namespace DEVInBank.Core.Entities
 
                     throw new Exception("O tipo e o período de aplicação não foi especificado!");
             }
-        } 
+        }
+
+        public void RealizarInvestimento(double valorAplicado, int mesesAplicado, TipoInvestimentoEnum tipoInvestimento)
+        {
+            ValorRendimento = SimularInvestimento(valorAplicado, mesesAplicado, tipoInvestimento);
+            ValorAplicado = valorAplicado;
+            this.tipoInvestimento = tipoInvestimento;
+            dataAplicacao = DateTime.Now;
+            dataRetirada = dataAplicacao.AddMonths(mesesAplicado);
+        }
+
+        public override void ConsultarExtrato()
+        {
+            Console.WriteLine($"Extrato do investimento da conta: {NumeroConta} | cliente: {cliente.Nome}");
+            Console.WriteLine($">>> Data da aplicação: {dataAplicacao} | Data da retirada: {dataRetirada} | Tipo: {tipoInvestimento} | Valor Aplicado: R$ {ValorAplicado} | Valor Rendido: R$ {ValorRendimento}");
+        }
+
     }
 }

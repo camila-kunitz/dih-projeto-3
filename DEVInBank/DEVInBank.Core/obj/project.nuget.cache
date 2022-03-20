@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "x0pQ65j2BRc6GUvQgTiYfRC/FUooyMFSgrE5miykLdqaF+H+wJi8/d+vwD9lzSpEoQLBn5PlU/n0kKnmRRmdUg==",
+  "dgSpecHash": "5L6IqW0T5pjOXDyL7Vf6dwNoUncvyu3RM2Po8X5Wrov7K+j/kUodXN5YQXch5cFvLaY+YAP/sF2T0yQnJ+ax2A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVInBank\\DEVInBank.Core\\DEVInBank.Core.csproj",
+  "projectFilePath": "C:\\Users\\Camila\\Desktop\\dih-projeto-3\\DEVinBank\\DEVInBank.Core\\DEVInBank.Core.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

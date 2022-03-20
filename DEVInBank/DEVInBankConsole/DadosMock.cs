@@ -6,7 +6,7 @@ namespace DEVInBankConsole
     public class DadosMock
     {
 
-        public static List<ContaBancaria> ContasBancarias = GetContasBancarias();
+        public static List<ContaBancaria> ContasBancariasMock = GetContasBancarias();
 
         private static List<ContaBancaria> GetContasBancarias()
         {
@@ -14,7 +14,7 @@ namespace DEVInBankConsole
 
             // Conta Corrente
             var enderecoCliente1 = new Endereco("Rua X", "123", "Bairro Y", "00.000-01", "Florianópolis", "SC");
-            var cliente1 = new Cliente("Camila", "000.000.000-01", enderecoCliente1);
+            var cliente1 = new Cliente("Luiz Pereira", "000.000.000-01", enderecoCliente1);
             var contaCliente1 = new ContaCorrente(AgenciaEnum.FLORIANOPOLIS, cliente1, 1000);
             contaCliente1.Depositar(500);
             contaCliente1.Depositar(300);
@@ -32,19 +32,18 @@ namespace DEVInBankConsole
             // Conta Investimento
             var enderecoCliente3 = new Endereco("Rua 3", "003", "Bairro 3", "00.000-03", "Biguaçú", "SC");
             var cliente3 = new Cliente("Maria da Paz", "000.000.000-03", enderecoCliente3);
-            var contaCliente3 = new ContaInvestimento(AgenciaEnum.BIGUACU, cliente3, 3000, TipoInvestimentoEnum.LCA);
+            var contaCliente3 = new ContaInvestimento(AgenciaEnum.BIGUACU, cliente3, 3000);
+            contaCliente3.RealizarInvestimento(1000, 6, TipoInvestimentoEnum.LCI);
 
             contasBancarias.Add(contaCliente1);
             contasBancarias.Add(contaCliente2);
             contasBancarias.Add(contaCliente3);
 
-            return contasBancarias;
-        }
-
-        public static void ExecutarTransferencias()
-        {
-            var transferencia = new Transferencia(ContasBancarias[0], ContasBancarias[1], 800);
+            // Cria transferência entre contas
+            var transferencia = new Transferencia(contaCliente1, contaCliente2, 700, new DateTime(2022, 3, 21));
             transferencia.ExecutarTransferencia();
+
+            return contasBancarias;
         }
     }
 }

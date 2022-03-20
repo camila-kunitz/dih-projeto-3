@@ -8,6 +8,7 @@ namespace DEVInBank.Core.Entities
 
         public ContaCorrente(AgenciaEnum numeroAgencia, Cliente cliente, double rendaMensal) : base(numeroAgencia, cliente, rendaMensal)
         {
+            TipoConta = TipoContaEnum.CORRENTE;
             LimiteChequeEspecial = RendaMensal * 0.10;
         }
 

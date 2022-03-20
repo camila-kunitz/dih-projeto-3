@@ -8,6 +8,7 @@ namespace DEVInBank.Core.Entities
 
         public int NumeroConta { get; private set; }
         public AgenciaEnum NumeroAgencia { get; private set; }
+        public TipoContaEnum TipoConta { get; set; }
         public Cliente cliente { get; private set; }
         public double RendaMensal { get; private set; }
         protected double saldo { get; set; }
@@ -48,7 +49,7 @@ namespace DEVInBank.Core.Entities
             } 
         }
 
-        public void ConsultarExtrato()
+        public virtual void ConsultarExtrato()
         {
             Console.WriteLine($"Extrato de movimentação da conta: {NumeroConta} | cliente: {cliente.Nome}");
 

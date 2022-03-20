@@ -15,6 +15,14 @@
             Data = DateTime.Now;
         }
 
+        public Transferencia(ContaBancaria contaOrigem, ContaBancaria contaDestino, double valor, DateTime data)
+        {
+            ContaOrigem = contaOrigem;
+            ContaDestino = contaDestino;
+            Valor = valor;
+            Data = data;
+        }
+
         public void ExecutarTransferencia()
         {
             try
